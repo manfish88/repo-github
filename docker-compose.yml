@@ -6,5 +6,13 @@ services:
     image: "manfish88/apps-ivan"
     volumes:
       - vol-data:/var/www/html/assets
+  web2:
+    ports:
+      - "5001:80"
+    image: "ngix"
+  web3:
+    ports:
+      - "5002:80"
+    image: "ubuntu/apache2"
 volumes:
   vol-data:
