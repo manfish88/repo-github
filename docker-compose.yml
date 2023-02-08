@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  web:
+    ports:
+      - "5000:80"
+    image: "manfish88/apps-ivan"
+    volumes:
+      -vol-data:/var/www/html/assets
+volumes:
+  vol-data:
