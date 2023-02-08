@@ -9,7 +9,7 @@ services:
   web2:
     ports:
       - "5001:80"
-    image: "ngix"
+    image: "nginx"
   web3:
     ports:
       - "5002:80"
